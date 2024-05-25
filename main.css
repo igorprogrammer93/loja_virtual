@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #14969b33;
+    color: black;
+    padding: 10px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-left: 24px;
+  }
+  
+  header nav ul li a {
+    color:black;
+    text-decoration: none;
+  }
+  
+  /* Estilos da seção "Sobre a Loja" */
+  .sobre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .sobre .imagem-loja img {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  
+  .sobre .texto-sobre {
+    flex: 1;
+  }
+  
+  /* Estilos da seção de produtos */
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .produto {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .produto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .produto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .produto .descricao {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .botao {
+    background-color: #14969b33;
+    color: #0c0000ec;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .botao:hover{
+    background-color: rgba(0, 110, 255, 0.342);
+  }
+  
+  /* Estilos responsivos */
+  @media only screen and (max-width: 1023px) {
+    .container {
+      padding: 10px;
+    }
+  
+    header {
+      padding: 5px 0;
+    }
+  
+    header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+  
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .sobre {
+      flex-direction: column;
+    }
+  
+    .sobre .imagem-loja img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .produto {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .produto {
+      width: 100%;
+    }
+  }
